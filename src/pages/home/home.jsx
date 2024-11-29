@@ -11,7 +11,6 @@ import './home.css';
 const HomePage = () => {
 
   const transformData = (data) => {
-    debugger
       const keys = Object.keys(data[0].acf).filter((key) => key.startsWith("Carousel"));
       const carouselValues = keys.map((key) => data[0].acf[key]);
       setImages(carouselValues); // Aquí tienes solo los valores en un array
