@@ -10,8 +10,6 @@ import './TeamPage.css';
 const TeamPage = () => {
 
   const transformData = (data) => {
-    debugger
-
     setApiData(data[0])
   }
 
