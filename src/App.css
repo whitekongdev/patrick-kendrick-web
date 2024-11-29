@@ -1,0 +1,87 @@
+
+.page-container {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Opcional: Asegúrate de que el contenido sea responsivo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .page-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* Estilo para el video */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Ajusta la altura según lo necesario */
+  margin-top: 2rem; /* Espacio entre el contenido superior y el video */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video para que ocupe todo el contenedor */
+  z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Global Swiper styles (can be added to your main CSS file) */
+.mySwiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333; /* Cambiar el color de los botones de navegación */
+}

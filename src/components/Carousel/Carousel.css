@@ -1,0 +1,18 @@
+/* Global Swiper styles (can be added to your main CSS file) */
+.mySwiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333; /* Cambiar el color de los botones de navegación */
+}

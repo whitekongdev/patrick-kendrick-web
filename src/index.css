@@ -1,0 +1,14 @@
+/* HeroSection.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+.hero-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-button {
+  background-color: #f7b32b; /* Color del botón */
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}

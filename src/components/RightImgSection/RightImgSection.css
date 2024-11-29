@@ -1,0 +1,74 @@
+/* Contenedor principal con Flexbox */
+.statistics-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem; /* Espacio entre el texto y la imagen */
+}
+
+/* Contenedor de contenido de estadísticas */
+.statistics-content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 400px;
+}
+
+/* Título de estadísticas */
+.statistics-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Texto descriptivo */
+.statistics-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de números de estadísticas */
+.statistics-numbers {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Elemento de cada estadística */
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Contenedor de la imagen */
+.statistics-image-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.statistics-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
