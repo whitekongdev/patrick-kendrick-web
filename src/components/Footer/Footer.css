@@ -1,0 +1,44 @@
+/* Estilos del footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* Sección izquierda del footer */
+.footer-left {
+  font-weight: 400;
+}
+
+/* Sección derecha del footer */
+.footer-right {
+  display: flex;
+}
+
+/* Menú de enlaces en el footer */
+.footer-menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+ }
+ 
+ .navbar-links span {
+   cursor: pointer;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   color: #374151;
+ }
+
+.footer-menu li a:hover {
+  text-decoration: underline;
+}
