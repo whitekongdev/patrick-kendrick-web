@@ -3,10 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules'; // Cambiado a 'swiper/modules'
-import videoSrc from '../../assets/images/IMG_9633.MP4';
-const ImageCarousel = ({ images, video }) => {
-  const items = [video, ...images]
+import { Pagination, Navigation } from 'swiper/modules';
+
+const ImageCarousel = ({ images }) => {
   return (
     <Swiper
       pagination={{ clickable: true }}
@@ -14,32 +13,37 @@ const ImageCarousel = ({ images, video }) => {
       modules={[Pagination, Navigation]}
       className="mySwiper"
     >
-      {items.map((image, index) => (
+      {images.map((item, index) => (
         <SwiperSlide key={index}>
-          {!index ? 
+          {item.type === 'video' ? (
             <video
-            controls={false}
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            style={{ width: "100%" }}
-          >
-            <source src={videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          
-          :
-          <img
-            src={image}
-            alt={`Slide ${index}`}
-            style={{
-              width: '100%',
-              height: '400px',
-              borderRadius: '10px',
-              objectFit: 'cover',
-            }}
-          />
-  }
+              controls={false}
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              style={{
+                width: '100%',
+                height: '500px',
+                borderRadius: '10px',
+                objectFit: 'cover',
+              }}
+            >
+              <source src={item.url} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img
+              src={item.url}
+              alt={`Slide ${index}`}
+              style={{
+                width: '100%',
+                height: '500px',
+                objectPosition: 'center',
+                borderRadius: '10px',
+                objectFit: 'cover',
+              }}
+            />
+          )}
         </SwiperSlide>
       ))}
     </Swiper>

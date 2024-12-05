@@ -1,0 +1,13 @@
+.vertical-space {
+  height: 3rem;
+}
+
+.sectionTitle {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.headerSeparator {
+  border-bottom: 1px solid black;
+  margin: 0 1rem 0 1rem;
+}

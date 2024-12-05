@@ -1,38 +1,39 @@
-/* Navbar.css */
 .navbar {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  gap: 50px;
+  justify-content: space-between;
+  position: relative;
 }
 
-.brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #374151;
-  line-height: 1.2;
+.navbar-header {
   display: flex;
-  flex: 1 1 31%;
-  text-align: center;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.indented {
-  display: inline-block;
-  margin-left: 0.5em;
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
+
 .navbar-links {
- display: flex;
- gap: 25px;
- align-items: center;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .navbar-links span {
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
   color: #374151;
+  font-size: 18px;
 }
 
 .hire-us {
@@ -42,4 +43,43 @@
   color: black;
   white-space: nowrap;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 10;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links span {
+    font-size: 16px;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .hire-us {
+    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+.brand-logo{
+  max-width: 100px;
 }
