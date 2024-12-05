@@ -13,9 +13,7 @@ const Footer = () => (
         <span>Listings</span>
         <span>Seller</span>
         <span>Buyer</span>
-        <Link to="/team">
-          <span>Team</span>
-        </Link>
+        <span>Team</span>
         <span>Vendor</span>
         <span>Partners</span>
       </div>
