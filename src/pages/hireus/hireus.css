@@ -65,3 +65,23 @@
     color: #2c3e50;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .hire-us-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hire-us-header-image img {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hire-us-header-content p {
+        text-align: center;
+    }
+
+    .hire-us-contact {
+        margin-top: 20px;
+    }
+}

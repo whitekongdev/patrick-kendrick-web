@@ -42,6 +42,7 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  color: #333;
 }
 
 .stat-item {
@@ -105,4 +106,24 @@
   .statistics-text {
     font-size: 0.9rem;
   }
+}
+
+.section.dark .statistics-title {
+  color: #FFD16F; 
+}
+
+.section.dark .statistics-text {
+  color: #CCCCCC; 
+}
+
+.section.dark .stat-value {
+  color: #FFD16F; 
+}
+
+.section.dark .stat-label {
+  color: #CCCCCC; 
+}
+
+.section.dark .statistics-image {
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }

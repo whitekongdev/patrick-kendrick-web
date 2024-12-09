@@ -51,6 +51,7 @@
 }
 
 .about-button {
+  font-family: 'Antic Didone', sans-serif;
   background-color: #FFD16F;
   color: black;
   padding: 0.8rem 1.5rem;
@@ -60,6 +61,10 @@
   font-size: 1.1rem;
   font-weight: bold;
   height: 4rem;
+}
+
+.about-button:hover{
+  background-color: #ceb04e;
 }
 
 .about-content-bottom {

@@ -1,9 +1,39 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
   justify-content: space-between;
+  position: sticky;
+  top: var(--navbar-top, 10px);
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  padding: var(--navbar-padding) 1rem;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar.no-scroll {
   position: relative;
+  padding: 1rem 2rem;
+  box-shadow: none;
+  background-color: #1A1A1A;
+  font-size: 1rem;
+}
+
+.brand-logo {
+  max-height: calc(var(--navbar-font-size, 3rem) * 3.6);
+  transition: max-height 0.1s ease;
+  padding-left: 1.5rem;
+}
+
+.navbar.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-header {
@@ -19,30 +49,58 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: #FFFFFF;
 }
 
 .navbar-links {
   display: flex;
-  gap: 25px;
+  gap: var(--navbar-gap);
+  font-size: var(--navbar-font-size);
   align-items: center;
   justify-content: space-around;
+  transition: gap 0.3s ease; 
 }
 
 .navbar-links span {
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Antic Didone', sans-serif;
   font-weight: bolder;
-  color: #374151;
-  font-size: 18px;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+.navbar-links span:hover {
+  color: #CEB04E;
+  text-decoration: underline;
+}
+
+.navbar.scrolled .navbar-links {
+  font-size: 0.9rem;
+}
+
+span.hire-us {
+  color: black;
+}
+
+span.hire-us:hover {
+  color: black;
 }
 
 .hire-us {
-  border: 1px solid #f7b32b;
+  border: 1px solid #FFD16F;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   color: black;
+  background-color: #FFD16F;
   white-space: nowrap;
   cursor: pointer;
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.hire-us:hover {
+  background-color: #ceb04e;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -57,7 +115,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
+    background-color: #1A1A1A;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
@@ -80,6 +138,9 @@
   }
 }
 
-.brand-logo{
-  max-width: 100px;
+.navbar.no-scroll {
+  padding: 1rem 1rem;
+  box-shadow: none;
+  background-color: #1A1A1A;
+  font-size: 1rem;
 }

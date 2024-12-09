@@ -44,7 +44,7 @@ const HireUsPage = () => {
       <section id="hire-us" className="hire-us-section">
         <HireUs hireUsData={hireUsData} />
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

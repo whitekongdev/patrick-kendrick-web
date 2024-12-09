@@ -79,8 +79,8 @@ const HomePage = () => {
       <section id="partners" className="partners-section spacer">
         <PartnersSection partnersData={partnersData} />
       </section>
-      <Footer />
-      <ScrollToTop />
+      {/* <Footer /> */}
+      {/* <ScrollToTop /> */}
     </div>
   );
 };

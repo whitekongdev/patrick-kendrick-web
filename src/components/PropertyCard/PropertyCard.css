@@ -2,9 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  background: #ffffff;
+  background: #2C2C2C;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
   margin: 30px 0;
   transition: transform 0.2s ease-in-out;
@@ -42,13 +42,13 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #333;
+  color: #FFD16F;
   margin-block-start: 1rem;
 }
 
 .property-description {
   font-size: 18px;
-  color: #7f8c8d;
+  color: #CCCCCC;
   margin-bottom: 20px;
   line-height: 1.8;
 }
@@ -60,7 +60,7 @@
   list-style: none;
   padding: 0;
   margin-bottom: 20px;
-  color: #7f8c8d;
+  color: #BBBBBB;
   font-size: 16px;
 }
 
@@ -95,7 +95,7 @@
 
 .property-button {
   background-color: #FFD16F;
-  color: #2c3e50;
+  color: #1A1A1A;
   font-weight: bold;
   font-size: 1.5rem;
   border: none;
@@ -106,10 +106,11 @@
   align-self: flex-end;
   height: 4.5rem;
   width: 25rem;
+  font-family: 'Antic Didone', sans-serif;
 }
 
 .property-button:hover {
-  background-color: #d4ac0d;
+  background-color: #D4AC0D;
 }
 
 .property-bottom {
