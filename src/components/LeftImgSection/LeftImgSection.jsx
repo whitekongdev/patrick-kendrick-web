@@ -1,8 +1,8 @@
 import React from 'react';
 import './LeftImgSection.css';
 
-const LeftImgSection = ({ title, description, img, button }) => (
-  <div className="section">
+const LeftImgSection = ({ title, description, img, button, darkMode = false }) => (
+  <div className={`section ${darkMode ? 'dark' : ''}`}>
     <section className="about-section">
       <div className="about-image-container">
         <img src={img} alt="About Us" className="about-image aspect-ratio" />

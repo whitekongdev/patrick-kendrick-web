@@ -1,15 +1,23 @@
 /* HeroSection.css */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .hero-section {
   text-align: center;
   padding: 2rem;
 }
 
 .hero-button {
-  background-color: #f7b32b; /* Color del botón */
+  background-color: #ceb04e; /* Color del botón */
   color: black;
   padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
+}
+
+:root {
+  --navbar-padding: 1rem;
+  --navbar-font-size: 3rem;
+  --navbar-gap: 75px;
+  --navbar-top: 10px
 }

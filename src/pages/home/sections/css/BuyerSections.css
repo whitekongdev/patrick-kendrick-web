@@ -1,0 +1,16 @@
+.buyer-section {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+.buyer-section .sectionTitle {
+    color: #FFD16F;
+}
+
+.buyer-section .headerSeparator {
+    height: 2px;
+    background-color: #FFD16F;
+    width: 50%;
+    margin: 1rem auto;
+}

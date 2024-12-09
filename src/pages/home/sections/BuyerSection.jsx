@@ -1,5 +1,6 @@
 import React from 'react';
 import RightImgSection from '../../../components/RightImgSection/RightImgSection';
+import './css/BuyerSections.css';
 
 const BuyerSection = ({ buyerData }) => {
   const { title, description, image } = buyerData;
@@ -13,6 +14,7 @@ const BuyerSection = ({ buyerData }) => {
       description={description}
       img={image}
       bottom={[]}
+      darkMode={true}
     />
     </>
   );

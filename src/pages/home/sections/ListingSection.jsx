@@ -15,6 +15,7 @@ const ListingSection = ({ listingData }) => {
         description={header.description || 'Default Description'}
         img={header.image || ''}
         button={header.button || null}
+        darkMode={true}
       />
       <div className="separator"></div>
       <div className="property-cards">

@@ -1,8 +1,8 @@
 import React from 'react';
 import './RightImgSection.css';
 
-const RightImgSection = ({ title, description, img, bottom }) => (
-  <div className="section">
+const RightImgSection = ({ title, description, img, bottom, darkMode = false }) => (
+  <div className={`section ${darkMode ? 'dark' : ''}`}>
     <section className="statistics-section">
       <div className="statistics-content">
         <h2 className="statistics-title">{title}</h2>
