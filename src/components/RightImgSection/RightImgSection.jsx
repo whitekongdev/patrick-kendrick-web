@@ -1,32 +1,27 @@
 import React from 'react';
 import './RightImgSection.css';
 
-const rightImgSection= ({ title, description, img }) => (
-  <section className="statistics-section">
-    <div className="statistics-content">
-      <h2 className="statistics-title">{title}</h2>
-      <p className="statistics-text">
-        {description}
-      </p>
-      <div className="statistics-numbers">
-        <div className="stat-item">
-          <span className="stat-value">270+</span>
-          <span className="stat-label">Happy Clients</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-value">12+</span>
-          <span className="stat-label">Available</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-value">50+</span>
-          <span className="stat-label">Events</span>
+const RightImgSection = ({ title, description, img, bottom, darkMode = false }) => (
+  <div className={`section ${darkMode ? 'dark' : ''}`}>
+    <section className="statistics-section">
+      <div className="statistics-content">
+        <h2 className="statistics-title">{title}</h2>
+        <p className="statistics-text">{description}</p>
+        <div className="statistics-numbers">
+          {bottom.map((stat, index) => (
+            <div className="stat-item" key={index}>
+              <span className="stat-value">{stat.title}</span>
+              <span style={{ marginLeft: '1rem' }}></span>
+              <span className="stat-label">{stat.subtitle}</span>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
-    <div className="statistics-image-container">
-      <img src={img} alt="Statistics Collage" className="statistics-image" />
-    </div>
-  </section>
+      <div className="statistics-image-container">
+        <img src={img} alt="Statistics Collage" className="statistics-image aspect-ratio" />
+      </div>
+    </section>
+  </div>
 );
 
-export default rightImgSection;
+export default RightImgSection;
