@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/patrick-kendrick-web/static/css/main.82488dbb.css",
-    "main.js": "/patrick-kendrick-web/static/js/main.f69391c3.js",
+    "main.js": "/patrick-kendrick-web/static/js/main.c99af651.js",
     "static/js/453.c5eaf93b.chunk.js": "/patrick-kendrick-web/static/js/453.c5eaf93b.chunk.js",
     "index.html": "/patrick-kendrick-web/index.html",
     "main.82488dbb.css.map": "/patrick-kendrick-web/static/css/main.82488dbb.css.map",
-    "main.f69391c3.js.map": "/patrick-kendrick-web/static/js/main.f69391c3.js.map",
+    "main.c99af651.js.map": "/patrick-kendrick-web/static/js/main.c99af651.js.map",
     "453.c5eaf93b.chunk.js.map": "/patrick-kendrick-web/static/js/453.c5eaf93b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82488dbb.css",
-    "static/js/main.f69391c3.js"
+    "static/js/main.c99af651.js"
   ]
 }
