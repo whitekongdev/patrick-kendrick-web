@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
 import MainSection from './sections/MainSection';
 import ListingSection from './sections/ListingSection';
 import SellerSection from './sections/SellerSection';
@@ -8,7 +7,6 @@ import BuyerSection from './sections/BuyerSection';
 import TeamSection from './sections/TeamSection';
 import VendorSection from './sections/VendorSection';
 import PartnersSection from './sections/PartnersSection';
-import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 import useFetchApi from '../../hooks/useFetchApi';
 import { useLocation } from 'react-router-dom';
 import ModalContact from '../../components/ModalForm/ModalForm';
@@ -16,9 +14,7 @@ import './home.css';
 
 const HomePage = () => {
   const { state } = useLocation();
-  const { data, loading, error } = useFetchApi(
-    'https://patrick-kendrick.whitekongsoftware.com/wp-json/wp/v2/pages'
-  );
+  const { data, loading, error } = useFetchApi(process.env.REACT_APP_API_URL);
 
   useEffect(() => {
     if (state?.targetSection) {

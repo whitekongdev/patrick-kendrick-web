@@ -6,9 +6,7 @@ import useFetchApi from '../../hooks/useFetchApi';
 import './hireus.css';
 
 const HireUsPage = () => {
-  const { data, loading, error } = useFetchApi(
-    'https://patrick-kendrick.whitekongsoftware.com/wp-json/wp/v2/pages'
-  );
+  const { data, loading, error } = useFetchApi(process.env.REACT_APP_API_URL);
 
   useEffect(() => {
   }, [data]);
