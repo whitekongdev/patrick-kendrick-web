@@ -3,11 +3,11 @@ import RightImgSection from '../../../components/RightImgSection/RightImgSection
 import './css/BuyerSections.css';
 
 const BuyerSection = ({ buyerData }) => {
-  const { title, description, image } = buyerData;
+  const { title, description, image, url } = buyerData;
 
   return (
     <>
-    <h1 className='sectionTitle'>Buyers</h1>
+    <h1 className='sectionTitle'>Buyer</h1>
     <div className='headerSeparator'></div>
     <RightImgSection
       title={title}
@@ -15,6 +15,10 @@ const BuyerSection = ({ buyerData }) => {
       img={image}
       bottom={[]}
       darkMode={true}
+      button={{
+        text: "Learn More",
+        url: url,
+      }}
     />
     </>
   );

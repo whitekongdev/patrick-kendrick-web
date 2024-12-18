@@ -3,7 +3,7 @@ import './PropertyCard.css';
 
 const PropertyCard = ({ property }) => {
   return (
-    <div className="property-card">
+    <a href={property.link} className="property-card" target="_blank" rel="noopener noreferrer">
       <div className="property-image-container">
         <img
           src={property.image}
@@ -13,21 +13,16 @@ const PropertyCard = ({ property }) => {
       </div>
       <div className="property-content">
         <h3 className="property-title">{property.title}</h3>
-        <p className="property-description">{property.description}</p>
+        <p className="property-price">{property.price}$</p>
         <div className='property-bottom'>
           <ul className="property-details">
             <li><i className="icon-area"></i> {property.area}</li>
             <li><i className="icon-rooms"></i> {property.rooms}</li>
             <li><i className="icon-kitchens"></i> {property.kitchens}</li>
           </ul>
-          {property.button && (
-            <button className="property-button">
-              {property.button} <span className="arrow">→</span>
-            </button>
-          )}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

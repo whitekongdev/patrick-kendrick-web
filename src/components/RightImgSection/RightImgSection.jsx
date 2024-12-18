@@ -1,7 +1,7 @@
 import React from 'react';
 import './RightImgSection.css';
 
-const RightImgSection = ({ title, description, img, bottom, darkMode = false }) => (
+const RightImgSection = ({ title, description, img, bottom, darkMode = false, button = null }) => (
   <div className={`section ${darkMode ? 'dark' : ''}`}>
     <section className="statistics-section">
       <div className="statistics-content">
@@ -16,6 +16,28 @@ const RightImgSection = ({ title, description, img, bottom, darkMode = false }) 
             </div>
           ))}
         </div>
+        {button && (
+          <div className="about-content-bottom">
+            {button.url ? (
+              <a
+                href={button.url}
+                className="about-button"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {button.text}
+              </a>
+            ) : (
+              <button
+                className="about-button"
+                onClick={button.onClick}
+              >
+                {button.text}
+              </button>
+            )}
+          </div>
+        )}
       </div>
       <div className="statistics-image-container">
         <img src={img} alt="Statistics Collage" className="statistics-image aspect-ratio" />

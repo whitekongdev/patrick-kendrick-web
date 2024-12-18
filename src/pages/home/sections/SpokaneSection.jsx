@@ -1,23 +1,25 @@
 import React from 'react';
 import RightImgSection from '../../../components/RightImgSection/RightImgSection';
-import './css/VendorSections.css';
 
-const SellerSection = ({ vendorData }) => {
-  const { title, description, image } = vendorData;
+const SpokaneSection = ({ spokaneData }) => {
+  const { title, description, image, url } = spokaneData;
 
   return (
     <>
-    <h1 className='sectionTitle'>Vendor</h1>
+    <h1 className='sectionTitle'>Spokane</h1>
     <div className='headerSeparator'></div>
     <RightImgSection
       title={title}
       description={description}
       img={image}
       bottom={[]}
-      darkMode={true}
+      button={{
+        text: "See More",
+        url: url,
+      }}
     />
     </>
   );
 };
 
-export default SellerSection;
+export default SpokaneSection;

@@ -5,11 +5,13 @@ import ListingSection from './sections/ListingSection';
 import SellerSection from './sections/SellerSection';
 import BuyerSection from './sections/BuyerSection';
 import TeamSection from './sections/TeamSection';
-import VendorSection from './sections/VendorSection';
+import MarketSection from './sections/MarketSection';
 import PartnersSection from './sections/PartnersSection';
+import SpokaneSection from './sections/SpokaneSection';
 import useFetchApi from '../../hooks/useFetchApi';
 import { useLocation } from 'react-router-dom';
 import ModalContact from '../../components/ModalForm/ModalForm';
+import Footer from '../../components/Footer/Footer'
 import './home.css';
 
 const HomePage = () => {
@@ -45,10 +47,12 @@ const HomePage = () => {
   const sellerData = apiData.acf?.seller;
   const buyerData = apiData.acf?.buyer;
   const teamData = apiData.acf?.team;
-  const vendorData = apiData.acf?.vendor;
   const partnersData = apiData.acf?.partners;
+  const marketData = apiData.acf?.market;
+  const spokaneData = apiData.acf?.spokane;
   const navbarData = apiData.acf?.navbaricon;
-  const contactFormData = apiData.acf.contactform;
+  const contactFormData = apiData.acf?.contactform;
+  const footerData = apiData.acf?.footer;
 
   return (
     <div className="home-page">
@@ -69,14 +73,16 @@ const HomePage = () => {
       <section id="team" className="team-section spacer">
         <TeamSection teamData={teamData} />
       </section>
-      <section id="vendor" className="vendor-section spacer">
-        <VendorSection vendorData={vendorData} />
-      </section>
       <section id="partners" className="partners-section spacer">
         <PartnersSection partnersData={partnersData} />
       </section>
-      {/* <Footer /> */}
-      {/* <ScrollToTop /> */}
+      <section id="market" className="market-section spacer">
+        <MarketSection marketData={marketData}/>
+      </section>
+      <section id="spokane" className="spokane-section spacer">
+        <SpokaneSection spokaneData={spokaneData} />
+      </section>
+      <Footer footerData={footerData} />
     </div>
   );
 };

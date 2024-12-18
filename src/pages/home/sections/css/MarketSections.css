@@ -1,0 +1,17 @@
+.market-section {
+    padding: 40px 20px;
+}
+
+.market-description {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.market-snapshots {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 40px 20px;
+}

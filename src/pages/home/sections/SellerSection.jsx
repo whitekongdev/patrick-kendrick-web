@@ -2,7 +2,7 @@ import React from 'react';
 import RightImgSection from '../../../components/RightImgSection/RightImgSection';
 
 const SellerSection = ({ sellerData }) => {
-  const { title, description, image } = sellerData;
+  const { title, description, image, url } = sellerData;
 
   return (
     <>
@@ -13,6 +13,10 @@ const SellerSection = ({ sellerData }) => {
       description={description}
       img={image}
       bottom={[]}
+      button={{
+        text: "Learn More",
+        url:url,
+      }}
     />
     </>
   );

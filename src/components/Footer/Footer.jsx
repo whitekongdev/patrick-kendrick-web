@@ -1,24 +1,47 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from "react-router-dom";
 
-const Footer = () => (
-  <footer className="footer">
-    <div className="footer-left">
-      <p>© datos de la empresa</p>
-    </div>
-    <div className="footer-right">
-      <div className="navbar-links">
-        <span>Home</span>
-        <span>Listings</span>
-        <span>Seller</span>
-        <span>Buyer</span>
-        <span>Team</span>
-        <span>Vendor</span>
-        <span>Partners</span>
+const Footer = ({ footerData }) => {
+  const { left, right } = footerData;
+
+  return (
+    <footer className="footer">
+      <div className="footer-left">
+        <div className="footer-left_top">
+          <h3>{left?.name}</h3>
+        </div>
+        <div className="footer-left_mid">
+          <p>{left?.subtitle}</p>
+        </div>
+        <div className="footer-left_bottom">
+          <a href={`tel:${left?.phone}`} className="footer-icon">
+            <i className="fa-solid fa-phone"></i>
+          </a>
+          <a href={`mailto:${left?.mail}`} className="footer-icon">
+            <i className="fa-solid fa-envelope"></i>
+          </a>
+          <a href={left?.ig} target="_blank" rel="noopener noreferrer" className="footer-icon">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a href={left?.fb} target="_blank" rel="noopener noreferrer" className="footer-icon">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a href={left?.zillow} target="_blank" rel="noopener noreferrer" className="footer-icon">
+            <i className="fa-solid fa-house"></i>
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
-);
+
+      <div className="footer-right">
+        <div className="footer-right_top">
+          <img src={right?.img} alt="Logo" />
+        </div>
+        <div className="footer-right_bottom">
+          <p>{right?.copyright} ©</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

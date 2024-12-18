@@ -5,11 +5,11 @@ import './css/ListingSection.css';
 
 const ListingSection = ({ listingData }) => {
   const { header = {}, properties = {} } = listingData;
-  const propertiesArray = Object.values(properties);
+  const propertiesArray = Object.values(properties).slice(0, 3);
   return (
     <section className="listing-section">
-      <h1 className='sectionTitle'>List of available properties</h1>
-      <div className='headerSeparator'></div>
+      <h1 className="sectionTitle">List of available properties</h1>
+      <div className="headerSeparator"></div>
       <LeftImgSection
         title={header.title || 'Default Title'}
         description={header.description || 'Default Description'}
@@ -18,7 +18,7 @@ const ListingSection = ({ listingData }) => {
         darkMode={true}
       />
       <div className="separator"></div>
-      <div className="property-cards">
+      <div className="property-cards horizontal-layout">
         {propertiesArray.length > 0 ? (
           propertiesArray.map((property, index) => (
             <PropertyCard key={index} property={property} />

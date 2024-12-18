@@ -1,15 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import HireUs from './hireus';
+import ContactForm from '../../components/ContactForm/ContactForm';
 import useFetchApi from '../../hooks/useFetchApi';
-import './hireus.css';
 
 const HireUsPage = () => {
   const { data, loading, error } = useFetchApi(process.env.REACT_APP_API_URL);
-
-  useEffect(() => {
-  }, [data]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -19,30 +15,21 @@ const HireUsPage = () => {
     return <div>Error: {error}</div>;
   }
 
-  const hireUsData = data[0]?.acf?.hireus || {
-    header: {
-      description: 'Default description',
-      image: 'https://via.placeholder.com/800x400',
-    },
-    contact: {
-      name: 'Default Name',
-      phone: '000-000-0000',
-      email: 'example@example.com',
-      ig: '#',
-      fb: '#',
-      personal_link: '#',
-      zillow: '#',
-    },
+  const footerData = data[0]?.acf?.footer;
+  const contactFormData = data[0]?.acf?.hireus_form || {
+    title: 'Get in Touch',
+    subtitle: 'We would love to hear from you! Fill out the form below to get started.',
   };
+
   const navbarData = data[0]?.acf?.navbaricon;
 
   return (
     <div className="hire-us-page">
       <Navbar navbarData={navbarData} />
-      <section id="hire-us" className="hire-us-section">
-        <HireUs hireUsData={hireUsData} />
+      <section id="contact-us" className="contact-us-section">
+        <ContactForm contactFormData={contactFormData} />
       </section>
-      {/* <Footer /> */}
+      <Footer footerData={footerData} />
     </div>
   );
 };

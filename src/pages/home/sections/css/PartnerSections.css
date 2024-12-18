@@ -1,16 +1,16 @@
-.vendor-section {
+.partners-section {
     background-color: #1A1A1A;
     color: #FFFFFF;
     padding: 2rem;
 }
 
-.vendor-section .sectionTitle {
+.partners-section .sectionTitle {
     color: #FFD16F;
 }
 
-.vendor-section .headerSeparator {
+.partners-section .headerSeparator {
     height: 2px;
     background-color: #FFD16F;
-    width: 50%;
+    width: 90%;
     margin: 1rem auto;
 }

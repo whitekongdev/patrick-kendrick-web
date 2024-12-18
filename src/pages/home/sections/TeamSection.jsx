@@ -6,7 +6,7 @@ const TeamSection = ({ teamData }) => {
 
   return (
     <>
-      <h1 className='sectionTitle'>Team</h1>
+      <h1 className='sectionTitle'>About Me</h1>
       <div className='headerSeparator'></div>
       <section id="team" className="team-section">
         <div className="team-header">
