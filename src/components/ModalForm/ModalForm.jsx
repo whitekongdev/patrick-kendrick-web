@@ -10,7 +10,7 @@ const ModalContact = ({contactFormData}) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setModalIsOpen(true);
-    }, 2000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -45,13 +45,6 @@ const ModalContact = ({contactFormData}) => {
             {contactFormData.subtitle}
         </p>
         <div className="modal-body">
-          <div className="modal-image-container">
-            <img
-              src={contactFormData.image}
-              alt="Contact Us"
-              className="modal-image"
-            />
-          </div>
           <form className="contact-form">
             <label htmlFor="fullName">Full Name *</label>
             <input type="text" id="fullName" name="fullName" required />

@@ -110,3 +110,11 @@
     max-width: 300px; 
   }
 }
+
+.section.dark .about-title {
+  color: #FFD16F; 
+}
+
+.section.dark .about-text {
+  color: #CCCCCC; 
+}

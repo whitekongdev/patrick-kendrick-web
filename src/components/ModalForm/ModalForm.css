@@ -28,12 +28,12 @@
 
 .modal {
     background: #ffffff;
-    width: 80%;
+    width: 70%;
     max-width: 800px;
     padding: 2rem;
     border-radius: 8px;
     position: relative;
-    max-height: 90vh;
+    max-height: 80vh;
     overflow-y: auto;
 }
 
@@ -69,17 +69,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.modal-image-container {
-    flex: 1 1 40%;
-}
-
-.modal-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
 }
 
 .contact-form {

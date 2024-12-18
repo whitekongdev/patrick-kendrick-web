@@ -1,0 +1,90 @@
+.contact-form-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.privacy-policy input{
+    display: block;
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.privacy-policy label {
+    display: block;
+    width: 75%;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.submit-button {
+    font-family: 'Antic Didone', sans-serif;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #FFD16F;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ceb04e;
+}

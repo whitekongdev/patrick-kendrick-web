@@ -12,6 +12,16 @@ const Navbar = ({ navbarData }) => {
   const isHireUsPage = location.pathname === '/hire-us';
 
   useEffect(() => {
+    if (isHireUsPage || isHome) {
+      document.documentElement.style.setProperty('--navbar-top', `10px`);
+      document.documentElement.style.setProperty('--navbar-padding', `1rem`);
+      document.documentElement.style.setProperty('--navbar-font-size', `3rem`);
+      document.documentElement.style.setProperty('--navbar-gap', `75px`);
+      setScrollState('notScrolled');
+    }
+  }, [isHireUsPage, isHome]);
+
+  useEffect(() => {
     if (isHireUsPage) return;
 
     const handleScroll = () => {
@@ -57,7 +67,7 @@ const Navbar = ({ navbarData }) => {
       <nav
         className={`navbar ${isHireUsPage ? 'no-scroll' : 'sticky'} ${scrollState}`}
       >
-        <div className="logo-container">
+        <div className="logo-container" onClick={() => handleNavigation('main')} style={{ cursor: 'pointer' }}>
           {navbarData ? (
             <img src={navbarData} alt="Logo" className="brand-logo" />
           ) : (
@@ -79,10 +89,11 @@ const Navbar = ({ navbarData }) => {
           <span onClick={() => handleNavigation('listings')}>Listings</span>
           <span onClick={() => handleNavigation('seller')}>Seller</span>
           <span onClick={() => handleNavigation('buyer')}>Buyer</span>
-          <span onClick={() => handleNavigation('team')}>Team</span>
-          <span onClick={() => handleNavigation('vendor')}>Vendor</span>
+          <span onClick={() => handleNavigation('team')}>About Me</span>
           <span onClick={() => handleNavigation('partners')}>Partners</span>
-          <span onClick={() => navigate('/hire-us')} className="hire-us">Hire Us</span>
+          <span onClick={() => handleNavigation('market')}>Market</span>
+          <span onClick={() => handleNavigation('spokane')}>Spokane</span>
+          <span onClick={() => navigate('/hire-us')} className="hire-us">Contact Us</span>
         </div>
       </nav>
   );
