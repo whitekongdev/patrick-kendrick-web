@@ -16,12 +16,12 @@ const HireUsPage = () => {
   }
 
   const footerData = data[0]?.acf?.footer;
-  const contactFormData = data[0]?.acf?.hireus_form || {
+  const contactFormData = data[0]?.acf?.hireus || {
     title: 'Get in Touch',
     subtitle: 'We would love to hear from you! Fill out the form below to get started.',
   };
 
-  const navbarData = data[0]?.acf?.navbaricon;
+  const navbarData = data[0]?.acf?.navbar;
 
   return (
     <div className="hire-us-page">

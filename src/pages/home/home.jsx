@@ -50,7 +50,7 @@ const HomePage = () => {
   const partnersData = apiData.acf?.partners;
   const marketData = apiData.acf?.market;
   const spokaneData = apiData.acf?.spokane;
-  const navbarData = apiData.acf?.navbaricon;
+  const navbarData = apiData.acf?.navbar;
   const contactFormData = apiData.acf?.contactform;
   const footerData = apiData.acf?.footer;
 
@@ -73,9 +73,9 @@ const HomePage = () => {
       <section id="team" className="team-section spacer">
         <TeamSection teamData={teamData} />
       </section>
-      <section id="partners" className="partners-section spacer">
+      {/* <section id="partners" className="partners-section spacer">
         <PartnersSection partnersData={partnersData} />
-      </section>
+      </section> */}
       <section id="market" className="market-section spacer">
         <MarketSection marketData={marketData}/>
       </section>

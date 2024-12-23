@@ -34,6 +34,9 @@ const Footer = ({ footerData }) => {
 
       <div className="footer-right">
         <div className="footer-right_top">
+          <a href={right?.realurl} target="_blank" rel="noopener noreferrer">
+            <img src={right?.realimg} alt="Logo" />
+          </a>
           <img src={right?.img} alt="Logo" />
         </div>
         <div className="footer-right_bottom">

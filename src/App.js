@@ -8,7 +8,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/patrick-kendrick-web">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/hire-us" element={<HireUsPage />} />

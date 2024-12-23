@@ -64,6 +64,15 @@
   color: #ddd;
 }
 
+.footer-right_top {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right_top>a {
+  padding-right: 0.5rem;
+}
+
 .footer-right_top img {
   width: 150px;
   height: auto;
