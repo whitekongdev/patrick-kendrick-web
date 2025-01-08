@@ -10,6 +10,7 @@ const MainSection = ({ apiData, images }) => {
     description: apiData.acf?.home?.firstsection?.description,
     image: apiData.acf?.home?.firstsection?.image,
     button: apiData.acf?.home?.firstsection?.button,
+    buttonLink: apiData.acf?.home?.firstsection?.buttonlink,
   };
 
   const secondSection = {
@@ -39,6 +40,7 @@ const MainSection = ({ apiData, images }) => {
           description={firstSection.description}
           img={firstSection.image}
           button={firstSection.button}
+          buttonLink={firstSection.buttonLink}
         />
       <div className="vertical-space"></div>
       <RightImgSection
@@ -53,6 +55,7 @@ const MainSection = ({ apiData, images }) => {
         description={thirdSection.description}
         img={thirdSection.image}
         button={thirdSection.button}
+        autoNavigation={true}
       />
     </div>
   );

@@ -36,7 +36,6 @@ const HomePage = () => {
   }
 
   const apiData = data[0];
-  console.log(apiData)
   const images = Object.entries(apiData.acf?.home?.carousel || {}).map(([key, value]) => {
     if (key.toLowerCase().includes('video')) {
       return { type: 'video', url: value };

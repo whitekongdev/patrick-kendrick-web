@@ -61,6 +61,10 @@
   font-size: 1.1rem;
   font-weight: bold;
   height: 4rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-button:hover{

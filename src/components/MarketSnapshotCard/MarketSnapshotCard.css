@@ -64,8 +64,6 @@
     transform: scale(1.05);
 }
 
-
-
 @media (max-width: 768px) {
     .market-snapshot-card {
         padding-left: 1rem;
@@ -77,5 +75,14 @@
     .market-snapshot-card {
         padding-left: 1rem;
         padding-bottom: 1rem;
+    }
+    .snapshot-button {
+        align-self: auto;
+    }
+    .navigate-button{
+        font-size: 1rem;
+    }
+    .snapshot-title {
+        font-size: 1.3rem;
     }
 }
