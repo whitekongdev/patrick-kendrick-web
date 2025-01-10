@@ -21,12 +21,13 @@ const ImageCarousel = ({ images }) => {
               autoPlay={true}
               loop={true}
               muted={true}
-              style={{
-                width: '100%',
-                height: '500px',
-                borderRadius: '10px',
-                objectFit: 'cover',
-              }}
+              className="carousel-video"
+              // style={{
+              //   width: '100%',
+              //   height: '500px',
+              //   borderRadius: '10px',
+              //   objectFit: 'contain',
+              // }}
             >
               <source src={item.url} type="video/mp4" />
               Your browser does not support the video tag.
@@ -35,13 +36,14 @@ const ImageCarousel = ({ images }) => {
             <img
               src={item.url}
               alt={`Slide ${index}`}
-              style={{
-                width: '100%',
-                height: '500px',
-                objectPosition: 'center',
-                borderRadius: '10px',
-                objectFit: 'cover',
-              }}
+              className="carousel-image"
+              // style={{
+              //   width: '100%',
+              //   height: '500px',
+              //   objectPosition: 'center',
+              //   borderRadius: '10px',
+              //   objectFit: 'contain',
+              // }}
             />
           )}
         </SwiperSlide>
