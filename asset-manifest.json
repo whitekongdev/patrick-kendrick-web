@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/patrick-kendrick-web/static/css/main.5c3cfea0.css",
+    "main.css": "/patrick-kendrick-web/static/css/main.804dc59d.css",
     "main.js": "/patrick-kendrick-web/static/js/main.3007b8dd.js",
     "static/js/453.c5eaf93b.chunk.js": "/patrick-kendrick-web/static/js/453.c5eaf93b.chunk.js",
     "static/media/fa-solid-900.ttf": "/patrick-kendrick-web/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
@@ -12,12 +12,12 @@
     "static/media/fa-v4compatibility.ttf": "/patrick-kendrick-web/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/patrick-kendrick-web/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/patrick-kendrick-web/index.html",
-    "main.5c3cfea0.css.map": "/patrick-kendrick-web/static/css/main.5c3cfea0.css.map",
+    "main.804dc59d.css.map": "/patrick-kendrick-web/static/css/main.804dc59d.css.map",
     "main.3007b8dd.js.map": "/patrick-kendrick-web/static/js/main.3007b8dd.js.map",
     "453.c5eaf93b.chunk.js.map": "/patrick-kendrick-web/static/js/453.c5eaf93b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c3cfea0.css",
+    "static/css/main.804dc59d.css",
     "static/js/main.3007b8dd.js"
   ]
 }
