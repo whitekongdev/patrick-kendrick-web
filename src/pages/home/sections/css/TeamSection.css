@@ -62,7 +62,25 @@
     margin-bottom: 20px;
     white-space: pre-wrap;
   }
+
+  .strong{
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .strong::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
   
+  .strong.open::before {
+    content: "−";
+  }
+
   @media (max-width: 768px) {
     .team-header {
       flex-direction: column;

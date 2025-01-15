@@ -52,24 +52,31 @@
     resize: none;
 }
 
+.contact-form select {
+    height: 2.8rem;
+}
+
 .privacy-policy {
     display: flex;
-    align-items: flex-start;
     align-items: center;
     gap: 0.5rem;
 }
 
-.privacy-policy input{
+.privacy-policy input {
     display: block;
     flex: 0 0 auto;
-    width: auto;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    appearance: checkbox;
 }
 
 .privacy-policy label {
-    display: block;
-    width: 75%;
     font-size: 0.9rem;
     color: #555;
+    line-height: 1.2;
 }
 
 .submit-button {
@@ -87,4 +94,11 @@
 
 .submit-button:hover {
     background-color: #ceb04e;
+}
+
+.form-status {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
 }

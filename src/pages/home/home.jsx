@@ -72,10 +72,7 @@ const HomePage = () => {
       <section id="team" className="team-section spacer">
         <TeamSection teamData={teamData} />
       </section>
-      {/* <section id="partners" className="partners-section spacer">
-        <PartnersSection partnersData={partnersData} />
-      </section> */}
-      <section id="market" className="market-section spacer">
+      <section id="market" className="market-section">
         <MarketSection marketData={marketData}/>
       </section>
       <section id="spokane" className="spokane-section spacer">

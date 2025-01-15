@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 const LeftImgSection = ({ title, description, img, button, buttonLink, autoNavigation = false, darkMode = false }) => {
   const navigate = useNavigate();
-
   const handleAutoNavigation = () => {
     if (autoNavigation) {
       navigate("/hire-us");
@@ -26,7 +25,7 @@ const LeftImgSection = ({ title, description, img, button, buttonLink, autoNavig
           </div>
           <div className="about-content-bottom">
             {autoNavigation ? (
-              <button className="about-button" onClick={handleAutoNavigation}>
+              <button className="about-button button-no-link" onClick={handleAutoNavigation}>
                 {button}
               </button>
             ) : button && buttonLink ? (

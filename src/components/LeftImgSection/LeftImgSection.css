@@ -107,11 +107,17 @@
 
   .about-content-bottom {
     justify-content: center;
+    width: 100%;
   }
 
   .about-button {
     width: 80%; 
     max-width: 300px; 
+  }
+
+  .button-no-link {
+    width: 223px!important;
+    height: 64px!important;
   }
 }
 

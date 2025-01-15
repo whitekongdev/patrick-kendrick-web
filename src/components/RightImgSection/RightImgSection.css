@@ -1,4 +1,3 @@
-
 .section {
   display: flex;
   justify-content: center;
@@ -93,8 +92,13 @@
   align-items: center;
 }
 
-.about-button:hover{
+.about-button:hover {
   background-color: #ceb04e;
+}
+
+.button-no-link {
+  width: 198px !important;
+  height: 89px !important;
 }
 
 @media (max-width: 768px) {
@@ -103,7 +107,8 @@
     align-items: center;
   }
 
-  .statistics-content, .statistics-image-container {
+  .statistics-content,
+  .statistics-image-container {
     max-width: 100%;
     text-align: center;
   }
@@ -125,22 +130,27 @@
   .statistics-text {
     font-size: 0.9rem;
   }
+
+  .button-no-link {
+    width: 279px !important;
+    height: 89px !important;
+  }
 }
 
 .section.dark .statistics-title {
-  color: #FFD16F; 
+  color: #FFD16F;
 }
 
 .section.dark .statistics-text {
-  color: #CCCCCC; 
+  color: #CCCCCC;
 }
 
 .section.dark .stat-value {
-  color: #FFD16F; 
+  color: #FFD16F;
 }
 
 .section.dark .stat-label {
-  color: #CCCCCC; 
+  color: #CCCCCC;
 }
 
 .section.dark .statistics-image {
