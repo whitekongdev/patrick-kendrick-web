@@ -6,18 +6,18 @@ import './css/Sections.css';
 
 const MainSection = ({ apiData, images }) => {
   const firstSection = {
-    title: apiData.acf?.home?.firstsection?.title,
-    description: apiData.acf?.home?.firstsection?.description,
-    image: apiData.acf?.home?.firstsection?.image,
-    button: apiData.acf?.home?.firstsection?.button,
-    buttonLink: apiData.acf?.home?.firstsection?.buttonlink,
+    title: apiData.acf?.home?.firstsection?.fs_title,
+    description: apiData.acf?.home?.firstsection?.fs_description,
+    image: apiData.acf?.home?.firstsection?.fs_image,
+    button: apiData.acf?.home?.firstsection?.fs_button,
+    buttonLink: apiData.acf?.home?.firstsection?.fs_buttonlink,
   };
 
   const secondSection = {
-    title: apiData.acf?.home?.secondsection?.title,
-    description: apiData.acf?.home?.secondsection?.description,
-    image: apiData.acf?.home?.secondsection?.image,
-    bottom: Object.entries(apiData.acf?.home?.secondsection?.bottom || {}).map(([key, value]) => ({
+    title: apiData.acf?.home?.secondsection?.ss_title,
+    description: apiData.acf?.home?.secondsection?.ss_description,
+    image: apiData.acf?.home?.secondsection?.ss_image,
+    bottom: Object.entries(apiData.acf?.home?.secondsection?.ss_bottom || {}).map(([key, value]) => ({
       position: key,
       title: value.title,
       subtitle: value.subtitle,
@@ -25,10 +25,10 @@ const MainSection = ({ apiData, images }) => {
   };
 
   const thirdSection = {
-    title: apiData.acf?.home?.thirdsection?.title,
-    description: apiData.acf?.home?.thirdsection?.description,
-    image: apiData.acf?.home?.thirdsection?.image,
-    button: apiData.acf?.home?.thirdsection?.button,
+    title: apiData.acf?.home?.thirdsection?.ts_title,
+    description: apiData.acf?.home?.thirdsection?.ts_description,
+    image: apiData.acf?.home?.thirdsection?.ts_image,
+    button: apiData.acf?.home?.thirdsection?.ts_button,
   }
 
   return (

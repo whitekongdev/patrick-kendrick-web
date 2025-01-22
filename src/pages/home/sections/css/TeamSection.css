@@ -67,7 +67,7 @@
     font-weight: bold;
     cursor: pointer;
     position: relative;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .strong::before {
@@ -94,10 +94,13 @@
   
     .team-header-content {
       max-width: 100%;
+      width: 94.5%;
+      min-height: 275px;
     }
   
     .team-top h2 {
       font-size: 28px;
+      padding-left: 1.5rem;
     }
   
     .team-top p {

@@ -40,9 +40,9 @@ const ModalContact = ({contactFormData}) => {
     >
       <div className="modal-content">
         <button onClick={closeModal} className="close-button">×</button>
-        <h2 className="modal-title">{ contactFormData.title }</h2>
+        <h2 className="modal-title">{ contactFormData.contactform_title }</h2>
         <p className="modal-subtitle">
-            {contactFormData.subtitle}
+            {contactFormData.contactform_subtitle}
         </p>
         <div className="modal-body">
           <form className="contact-form">

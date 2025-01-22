@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import './ContactForm.css';
 
-const ContactForm = ({ title, subtitle }) => {
+const ContactForm = ({ contactFormData  }) => {
+  const { hireus_title: hireus_title, hireus_subtitle: hireus_subtitle } = contactFormData;
   const [formData, setFormData] = useState({
     "your-name": "",
     phone: "",
@@ -10,7 +11,6 @@ const ContactForm = ({ title, subtitle }) => {
     "your-message": "",
     privacy: false,
   });
-
   const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
@@ -75,8 +75,8 @@ const ContactForm = ({ title, subtitle }) => {
   return (
     <section className="contact-form-section">
       <div className="contact-form-header">
-        <h2 className="form-title">{title}</h2>
-        <p className="form-subtitle">{subtitle}</p>
+        <h2 className="form-title">{hireus_title}</h2>
+        <p className="form-subtitle">{hireus_subtitle}</p>
       </div>
       <div className="contact-form-body">
         <form className="contact-form" onSubmit={handleSubmit}>

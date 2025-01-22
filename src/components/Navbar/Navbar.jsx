@@ -70,7 +70,7 @@ const Navbar = ({ navbarData }) => {
       <div className="logo-container-wrapper">
         <div className="logo-container" onClick={() => handleNavigation('main')} style={{ cursor: 'pointer' }}>
           {navbarData ? (
-            <img src={navbarData.patrickkendricklogo} alt="Logo" className="brand-logo" />
+            <img src={navbarData.navbar_patrickkendricklogo} alt="Logo" className="brand-logo" />
           ) : (
             <h1 className="brand">
               Patrick<br />
@@ -79,9 +79,9 @@ const Navbar = ({ navbarData }) => {
           )}
         </div>
         <div className="second-logo-container" style={{ cursor: 'pointer' }}>
-          {navbarData.reallogo ? (
-            <a href={navbarData?.reallink} target="_blank" rel="noopener noreferrer" className='secondLogo-link'>
-              <img src={navbarData.reallogo} alt="Real Logo" className="real-logo" />
+          {navbarData.navbar_reallogo ? (
+            <a href={navbarData?.navbar_reallink} target="_blank" rel="noopener noreferrer" className='secondLogo-link'>
+              <img src={navbarData.navbar_reallogo} alt="Real Logo" className="real-logo" />
             </a>
           ) : (
             <h1 className="brand">

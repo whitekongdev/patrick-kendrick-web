@@ -20,7 +20,6 @@ const HireUsPage = () => {
     title: 'Get in Touch',
     subtitle: 'We would love to hear from you! Fill out the form below to get started.',
   };
-
   const navbarData = data[0]?.acf?.navbar;
 
   return (

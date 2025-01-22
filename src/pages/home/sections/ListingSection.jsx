@@ -11,9 +11,9 @@ const ListingSection = ({ listingData }) => {
       <h1 className="sectionTitle">List of available properties</h1>
       <div className="headerSeparator"></div>
       <LeftImgSection
-        title={header.title || 'Default Title'}
-        description={header.description || 'Default Description'}
-        img={header.image || ''}
+        title={header.listin_title || 'Default Title'}
+        description={header.listin_description || 'Default Description'}
+        img={header.listin_image || ''}
         button={header.button || null}
         darkMode={true}
       />
